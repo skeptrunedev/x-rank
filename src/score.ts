@@ -23,14 +23,6 @@ export const scores: Record<ScoreMetric, ScoreDefinition> = {
     unit: "total impressions",
     description: "Total impressions (views) across all posts in the window",
     value: ({ stats }) => stats.impressions
-  },
-  jay: {
-    key: "jay",
-    label: "JAY",
-    unit: "name-width score",
-    description:
-      "Ranked by the width (character count) of the account's display name — shorter names rule. ¯\\_(ツ)_/¯",
-    value: (_, account) => Math.max(0, 100 - account.name.length)
   }
 }
 

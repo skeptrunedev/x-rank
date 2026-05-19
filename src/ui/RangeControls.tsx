@@ -1,5 +1,5 @@
 import { useAtom } from "@effect/atom-react"
-import type { DateRange, ScoreMetric } from "../api.ts"
+import type { DateRange } from "../api.ts"
 import { modeAtom, rangeAtom, scoreAtom, weekOfAtom } from "../atoms.ts"
 import { ranges } from "../metrics.ts"
 import type { DashboardModel } from "../model.ts"
@@ -49,26 +49,8 @@ export function RangeControls({ dashboard }: { readonly dashboard: DashboardMode
       <div className="range-modes" role="tablist" aria-label="Score">
         <ModeButton active={score === "engagements"} label="Engagements" onClick={() => setScore("engagements")} />
         <ModeButton active={score === "impressions"} label="Impressions" onClick={() => setScore("impressions")} />
-        <ModeButton active={score === "jay"} label="JAY" onClick={() => setScore("jay" as ScoreMetric)} />
       </div>
     </section>
-  )
-}
-
-export function JayDancer() {
-  return (
-    <div className="jay-dancer" aria-hidden="true">
-      <div className="jay-face">
-        <img
-          alt=""
-          src="/jay.png"
-          onError={(e) => {
-            ;(e.currentTarget as HTMLImageElement).style.display = "none"
-          }}
-        />
-        <span className="jay-fallback">JAY</span>
-      </div>
-    </div>
   )
 }
 

@@ -7,7 +7,7 @@ export type DateRange = Schema.Schema.Type<typeof DateRange>
 export const RangeMode = Schema.Literals(["rolling", "weekly"])
 export type RangeMode = Schema.Schema.Type<typeof RangeMode>
 
-export const ScoreMetric = Schema.Literals(["engagements", "impressions", "jay"])
+export const ScoreMetric = Schema.Literals(["engagements", "impressions"])
 export type ScoreMetric = Schema.Schema.Type<typeof ScoreMetric>
 
 export const Source = Schema.Literals(["fake", "x"])
