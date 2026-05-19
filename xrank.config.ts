@@ -35,7 +35,7 @@ export default defineXRankConfig({
     { handle: "wacheeeee" }
   ],
   schedule: {
-    every: "24 hours",
+    every: "4 hours",
     command:
       "npm run refresh -- --skip-if-fresh && npm run export && npm run build && npx wrangler pages deploy dist --project-name x-rank --branch main --commit-dirty=true",
     label: "com.skeptrune.xrank"
