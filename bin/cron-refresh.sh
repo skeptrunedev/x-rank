@@ -6,6 +6,14 @@ export NVM_DIR="$HOME/.nvm"
 
 cd "$(dirname "$0")/.."
 
+# Load .env so the cron picks up CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID
+# (and X_BEARER_TOKEN) without relying on wrangler's stored OAuth creds.
+if [ -f .env ]; then
+  set -a
+  . ./.env
+  set +a
+fi
+
 mkdir -p logs
 
 {

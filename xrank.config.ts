@@ -3,6 +3,7 @@ import { defineXRankConfig } from "./src/xrank-config.ts"
 export default defineXRankConfig({
   title: "Mintlify Affiliates",
   roster: [
+    { handle: "aadit2805" },
     { handle: "acortezf" },
     { handle: "branmcconnell" },
     { handle: "cdxker" },
@@ -23,14 +24,14 @@ export default defineXRankConfig({
     { handle: "kylefinken" },
     { handle: "laurenfrailey1" },
     { handle: "leylndd" },
+    { handle: "lindszng" },
     { handle: "mintlify" },
-    { handle: "mytracksuite" },
-    { handle: "nehahalebeed" },
+    { handle: "nhalebeed" },
     { handle: "pqoqubbw" },
     { handle: "pronounsuponly" },
     { handle: "reed_barnes" },
+    { handle: "rohandevs" },
     { handle: "skeptrune" },
-    { handle: "toolwind" },
     { handle: "trieveai" },
     { handle: "wacheeeee" }
   ],
