@@ -33,7 +33,13 @@ export default defineXRankConfig({
     { handle: "rohandevs" },
     { handle: "skeptrune" },
     { handle: "trieveai" },
-    { handle: "wacheeeee" }
+    { handle: "wacheeeee" },
+    { handle: "theo" },
+    { handle: "RhysSullivan" },
+    { handle: "dylan522p" },
+    { handle: "dwarkesh_sp" },
+    { handle: "kyanyang_" },
+    { handle: "marco_dewey" }
   ],
   schedule: {
     every: "4 hours",
